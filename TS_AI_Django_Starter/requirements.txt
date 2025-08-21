@@ -5,13 +5,15 @@ django-filter==24.3
 django-cors-headers==4.4.0
 
 # Testing & Automation
-pytest==8.2.2
+pytest==8.2.1
 pytest-bdd==8.1.0
+pytest-rerunfailures==15.1
 behave==1.2.6
 
 # Selenium & WebDrivers
-selenium==4.23.1
+selenium==4.26.1
 webdriver-manager==4.0.1
+appium-python-client==5.2.2
 
 # Utilities
 requests==2.31.0
