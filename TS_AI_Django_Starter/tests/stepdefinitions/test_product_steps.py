@@ -25,5 +25,6 @@ def add_product(driver, name, price):
 @then(parsers.parse("I should see the product created in the UI"))
 def verify_product(driver):
     driver.find_element(By.CSS_SELECTOR, "button[data-bs-target='#search']").click()
+    driver.find_element(By.CSS_SELECTOR, ".btn-secondary").click()
     page_src = driver.page_source
     assert "car" in page_src
