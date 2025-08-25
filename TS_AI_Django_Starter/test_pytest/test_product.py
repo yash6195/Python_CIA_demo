@@ -15,7 +15,7 @@ def driver():
 
 def test_add_and_verify_product(driver):
     # Navigate to the application
-    driver.get("http://127.0.0.1:8000/")
+    driver.get("http://127.0.0.1:5000/")
 
     # Navigate to products page
     products_button = WebDriverWait(driver, 10).until(
