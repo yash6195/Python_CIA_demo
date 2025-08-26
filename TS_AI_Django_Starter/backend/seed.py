@@ -23,8 +23,8 @@ if not Product.objects.exists():
 
     # Create demo users
     users = [
-        User(username="alice", email="alice@example.com"),
-        User(username="bob", email="bob@example.com"),
+        User(username="alice", email="alice@example.com", gender="Female"),
+        User(username="bob", email="bob@example.com", gender="Male"),
     ]
     User.objects.bulk_create(users)
 
