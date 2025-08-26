@@ -23,7 +23,7 @@ class UserViewSet(BulkCreateMixin, viewsets.ModelViewSet):
     queryset = User.objects.all().order_by("-id")
     serializer_class = UserSerializer
     filterset_fields = ["is_active"]
-    search_fields = ["username", "email"]
+    search_fields = ["username", "email", "gender"]
 
 class ProductViewSet(BulkCreateMixin, viewsets.ModelViewSet):
     queryset = Product.objects.all().order_by("-id")
